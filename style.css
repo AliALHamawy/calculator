@@ -1,0 +1,76 @@
+*{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#display_area{
+    background-color: #c3fee2;
+    height: 80px;
+    width: 402px; /* عرض ثابت */
+    max-width: 402px; /* لا يتوسع أبداً */
+    min-width: 402px; /* لا يصغر أبداً */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 5px;
+    display: block;
+    font-size: 24px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    word-break: break-all;
+    /* max-width: fit-content; */
+}
+
+/* تم حذف result_area */
+
+
+#calculator_container{
+    display: flex;
+    flex-direction: column;
+    background-color: #8ef083;
+    width: fit-content;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    margin: 25vh auto ;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+}
+.calculator_row{
+    margin: 5px auto;
+}
+button{
+    width: 100px;
+    height: 60px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    box-shadow:  8px 5px 10px rgba(0, 0, 0, .3);
+    transition: .5s;
+    cursor: pointer;
+}
+button:hover{
+    filter: brightness(.85);
+    transform: translateY(-2px);
+}
+
+/* Start Mobail */
+@media(max-width: 576px){
+    
+button{
+    width: 64px;
+    height: 30px;
+}
+#display_area{
+    height: 55px;
+    width: 256px;
+    min-width: 256px;
+    max-width: 256px;
+}
+}
