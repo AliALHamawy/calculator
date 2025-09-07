@@ -19,6 +19,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     word-break: break-all;
+    color : #025239;
     /* max-width: fit-content; */
 }
 
